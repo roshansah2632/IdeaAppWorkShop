@@ -1,0 +1,32 @@
+solution -
+class Animal{
+    public void mainsound(){
+        System.out.println("animal make sound");
+    }
+}
+class dog extends Animal{
+    public void mainsound(){
+        System.out.println("dogs bark");
+    }
+}
+class cat extends Animal{
+    @Override
+    public void mainsound() {
+        System.out.println("cat says meow");
+    }
+}
+
+
+public class Sound{
+
+
+    public static void main(String arr[]){
+   Animal sc = new Animal();
+   sc.mainsound();
+   cat t1 = new cat();
+   t1.mainsound();
+   dog d = new dog();
+   d.mainsound();
+
+    }
+}
